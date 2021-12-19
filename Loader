@@ -1,0 +1,996 @@
+for i,v in pairs(game.CoreGui:GetChildren()) do
+	if v.Name == "MAX" then
+		v:Destroy()
+	end
+end
+
+local MAX = Instance.new("ScreenGui")
+local ENDSS = Instance.new("Frame")
+local topbar = Instance.new("Frame")
+local LOGO = Instance.new("TextLabel")
+local Tab = Instance.new("Frame")
+local Page1 = Instance.new("TextButton")
+local Page2 = Instance.new("TextButton")
+local Page3 = Instance.new("TextButton")
+local Page4 = Instance.new("TextButton")
+local Line_1 = Instance.new("Frame")
+local Line_2 = Instance.new("Frame")
+local Line_3 = Instance.new("Frame")
+local Line_4 = Instance.new("Frame")
+local PageON = Instance.new("ScrollingFrame")
+local SIDELEF = Instance.new("Frame")
+local BARTITLE_1 = Instance.new("Frame")
+local BARTITLE_2 = Instance.new("Frame")
+local DAT = Instance.new("TextLabel")
+local Fill = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local UICorner_2 = Instance.new("UICorner")
+local Slider = Instance.new("TextLabel")
+local BUTTON = Instance.new("TextButton")
+local TTITL = Instance.new("TextLabel")
+local BUTTON2 = Instance.new("TextButton")
+local TTITL2 = Instance.new("TextLabel")
+local Label = Instance.new("TextLabel")
+local PRESS = Instance.new("TextButton")
+local PRESS2 = Instance.new("TextButton")
+local SIDERIG = Instance.new("Frame")
+local ULTLINE = Instance.new("Frame")
+local page2 = Instance.new("ScrollingFrame")
+local SIDELEF_2 = Instance.new("Frame")
+local SIDERIG_2 = Instance.new("Frame")
+local page3 = Instance.new("ScrollingFrame")
+local SIDELEF_3 = Instance.new("Frame")
+local SIDERIG_3 = Instance.new("Frame")
+local page4 = Instance.new("ScrollingFrame")
+local SIDELEF_4 = Instance.new("Frame")
+local SIDERIG_4 = Instance.new("Frame")
+local Loader = Instance.new("Frame")
+local Load = Instance.new("ImageLabel")
+local Start = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Welcome = Instance.new("TextLabel")
+local lt = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local UICorner_5 = Instance.new("UICorner")
+local Nofication = Instance.new("Frame")
+local mark = Instance.new("ImageButton")
+local NTT = Instance.new("TextLabel")
+local ABOUT = Instance.new("TextLabel")
+local UICorner_6 = Instance.new("UICorner")
+local ColorDelay = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+
+MAX.Name = "MAX"
+MAX.Parent = game:WaitForChild("CoreGui")
+MAX.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+ENDSS.Name = "ENDSS"
+ENDSS.Parent = MAX
+ENDSS.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+ENDSS.BorderSizePixel = 0
+ENDSS.ClipsDescendants = true
+ENDSS.Position = UDim2.new(0.300947875, 0, 0.187800974, 0)
+ENDSS.Size = UDim2.new(0, 504, 0, 388)
+ENDSS.Visible = false
+
+topbar.Name = "topbar"
+topbar.Parent = ENDSS
+topbar.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+topbar.BorderSizePixel = 0
+topbar.Position = UDim2.new(-0.000639415928, 0, -0.000343401422, 0)
+topbar.Size = UDim2.new(0, 504, 0, 54)
+topbar.ZIndex = 2
+
+LOGO.Name = "LOGO"
+LOGO.Parent = topbar
+LOGO.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LOGO.BackgroundTransparency = 1.000
+LOGO.BorderSizePixel = 0
+LOGO.Position = UDim2.new(0.0376984142, 0, 0.00246740272, 0)
+LOGO.Size = UDim2.new(0, 151, 0, 53)
+LOGO.ZIndex = 3
+LOGO.Font = Enum.Font.GothamSemibold
+LOGO.Text = "Sychorn"
+LOGO.TextColor3 = Color3.fromRGB(155, 0, 232)
+LOGO.TextScaled = true
+LOGO.TextSize = 14.000
+LOGO.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+LOGO.TextWrapped = true
+
+Tab.Name = "Tab"
+Tab.Parent = topbar
+Tab.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Tab.BorderSizePixel = 0
+Tab.Position = UDim2.new(0.359126985, 0, 0, 0)
+Tab.Size = UDim2.new(0, 323, 0, 53)
+Tab.ZIndex = 4
+
+Page1.Name = "Page1"
+Page1.Parent = Tab
+Page1.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Page1.BorderSizePixel = 0
+Page1.Size = UDim2.new(0, 75, 0, 45)
+Page1.ZIndex = 5
+Page1.Font = Enum.Font.GothamSemibold
+Page1.Text = "Tab1"
+Page1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Page1.TextSize = 20.000
+
+Page2.Name = "Page2"
+Page2.Parent = Tab
+Page2.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Page2.BorderSizePixel = 0
+Page2.Position = UDim2.new(0.250773996, 0, 0, 0)
+Page2.Size = UDim2.new(0, 75, 0, 45)
+Page2.ZIndex = 5
+Page2.Font = Enum.Font.GothamSemibold
+Page2.Text = "Tab2"
+Page2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Page2.TextSize = 20.000
+
+Page3.Name = "Page3"
+Page3.Parent = Tab
+Page3.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Page3.BorderSizePixel = 0
+Page3.Position = UDim2.new(0.504643977, 0, 0, 0)
+Page3.Size = UDim2.new(0, 75, 0, 45)
+Page3.ZIndex = 5
+Page3.Font = Enum.Font.GothamSemibold
+Page3.Text = "Tab3"
+Page3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Page3.TextSize = 20.000
+
+Page4.Name = "Page4"
+Page4.Parent = Tab
+Page4.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Page4.BorderSizePixel = 0
+Page4.Position = UDim2.new(0.767801881, 0, 0, 0)
+Page4.Size = UDim2.new(0, 75, 0, 45)
+Page4.ZIndex = 5
+Page4.Font = Enum.Font.GothamSemibold
+Page4.Text = "Tab4"
+Page4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Page4.TextSize = 20.000
+
+Line_1.Name = "Line_1"
+Line_1.Parent = Tab
+Line_1.BackgroundColor3 = Color3.fromRGB(155, 0, 232)
+Line_1.BorderSizePixel = 0
+Line_1.Position = UDim2.new(0, 0, 0.849056602, 0)
+Line_1.Size = UDim2.new(0, 75, 0, 2)
+Line_1.ZIndex = 8
+
+Line_2.Name = "Line_2"
+Line_2.Parent = Tab
+Line_2.BackgroundColor3 = Color3.fromRGB(155, 0, 232)
+Line_2.BorderSizePixel = 0
+Line_2.Position = UDim2.new(0.250773996, 0, 0.849056602, 0)
+Line_2.Size = UDim2.new(0, 75, 0, 2)
+Line_2.Visible = false
+Line_2.ZIndex = 8
+
+Line_3.Name = "Line_3"
+Line_3.Parent = Tab
+Line_3.BackgroundColor3 = Color3.fromRGB(155, 0, 232)
+Line_3.BorderSizePixel = 0
+Line_3.Position = UDim2.new(0.504643977, 0, 0.849056602, 0)
+Line_3.Size = UDim2.new(0, 75, 0, 2)
+Line_3.Visible = false
+Line_3.ZIndex = 8
+
+Line_4.Name = "Line_4"
+Line_4.Parent = Tab
+Line_4.BackgroundColor3 = Color3.fromRGB(155, 0, 232)
+Line_4.BorderSizePixel = 0
+Line_4.Position = UDim2.new(0.767801881, 0, 0.849056602, 0)
+Line_4.Size = UDim2.new(0, 75, 0, 2)
+Line_4.Visible = false
+Line_4.ZIndex = 8
+
+PageON.Name = "PageON"
+PageON.Parent = ENDSS
+PageON.Active = true
+PageON.BackgroundColor3 = Color3.fromRGB(155, 0, 232)
+PageON.BackgroundTransparency = 1.000
+PageON.BorderColor3 = Color3.fromRGB(27, 42, 53)
+PageON.BorderSizePixel = 0
+PageON.Position = UDim2.new(-0.0019841271, 0, 0.136597931, 0)
+PageON.Size = UDim2.new(0, 504, 0, 319)
+PageON.ZIndex = 7
+PageON.ScrollBarThickness = 5
+
+SIDELEF.Name = "SIDELEF"
+SIDELEF.Parent = PageON
+SIDELEF.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+SIDELEF.BorderSizePixel = 0
+SIDELEF.Position = UDim2.new(0.0390431248, 0, 0.0254298002, 0)
+SIDELEF.Size = UDim2.new(0, 227, 0, 290)
+SIDELEF.ZIndex = 6
+
+BARTITLE_1.Name = "BARTITLE_1"
+BARTITLE_1.Parent = SIDELEF
+BARTITLE_1.BackgroundColor3 = Color3.fromRGB(155, 0, 232)
+BARTITLE_1.BorderSizePixel = 0
+BARTITLE_1.Position = UDim2.new(0.0714285821, 0, 0.0423023924, 0)
+BARTITLE_1.Size = UDim2.new(0, 50, 0, 2)
+BARTITLE_1.ZIndex = 999
+
+BARTITLE_2.Name = "BARTITLE_2"
+BARTITLE_2.Parent = SIDELEF
+BARTITLE_2.BackgroundColor3 = Color3.fromRGB(155, 0, 232)
+BARTITLE_2.BorderSizePixel = 0
+BARTITLE_2.Position = UDim2.new(0.709329784, 0, 0.0423023924, 0)
+BARTITLE_2.Size = UDim2.new(0, 50, 0, 2)
+BARTITLE_2.ZIndex = 999
+
+DAT.Name = "DAT"
+DAT.Parent = SIDELEF
+DAT.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DAT.BackgroundTransparency = 1.000
+DAT.BorderSizePixel = 0
+DAT.Position = UDim2.new(-0.000604450703, 0, -0.0125706494, 0)
+DAT.Size = UDim2.new(0, 226, 0, 32)
+DAT.ZIndex = 998
+DAT.Font = Enum.Font.GothamSemibold
+DAT.Text = "Title"
+DAT.TextColor3 = Color3.fromRGB(155, 0, 232)
+DAT.TextSize = 14.000
+
+Fill.Name = "Fill"
+Fill.Parent = SIDELEF
+Fill.BackgroundColor3 = Color3.fromRGB(155, 0, 232)
+Fill.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Fill.BorderSizePixel = 0
+Fill.Position = UDim2.new(0.0502290577, 0, 0.640626371, 0)
+Fill.Size = UDim2.new(0, 190, 0, 5)
+Fill.ZIndex = 10000
+
+TextButton.Parent = Fill
+TextButton.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 4
+TextButton.Position = UDim2.new(0, 0, 0.600000024, 0)
+TextButton.Size = UDim2.new(0, 9, 0, 19)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = ""
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+UICorner.Parent = TextButton
+
+UICorner_2.Parent = Fill
+
+Slider.Name = "Slider"
+Slider.Parent = SIDELEF
+Slider.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Slider.BackgroundTransparency = 1.000
+Slider.BorderSizePixel = 0
+Slider.Position = UDim2.new(0.0436211824, 0, 0.532256842, 0)
+Slider.Size = UDim2.new(0, 194, 0, 32)
+Slider.ZIndex = 998
+Slider.Font = Enum.Font.GothamSemibold
+Slider.Text = "Slider"
+Slider.TextColor3 = Color3.fromRGB(155, 0, 232)
+Slider.TextSize = 14.000
+Slider.TextXAlignment = Enum.TextXAlignment.Left
+
+BUTTON.Name = "BUTTON"
+BUTTON.Parent = SIDELEF
+BUTTON.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+BUTTON.BorderColor3 = Color3.fromRGB(155, 0, 232)
+BUTTON.BorderSizePixel = 2
+BUTTON.Position = UDim2.new(0.0440528616, 0, 0.120689653, 0)
+BUTTON.Size = UDim2.new(0, 30, 0, 30)
+BUTTON.ZIndex = 1200
+BUTTON.Font = Enum.Font.SourceSans
+BUTTON.Text = ""
+BUTTON.TextColor3 = Color3.fromRGB(255, 255, 255)
+BUTTON.TextSize = 14.000
+
+TTITL.Name = "TTITL"
+TTITL.Parent = BUTTON
+TTITL.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TTITL.BackgroundTransparency = 1.000
+TTITL.BorderSizePixel = 0
+TTITL.Position = UDim2.new(1.20644403, 0, -0.0482028499, 0)
+TTITL.Size = UDim2.new(0, 158, 0, 32)
+TTITL.ZIndex = 998
+TTITL.Font = Enum.Font.GothamSemibold
+TTITL.Text = "Toggle1"
+TTITL.TextColor3 = Color3.fromRGB(255, 255, 255)
+TTITL.TextSize = 18.000
+TTITL.TextXAlignment = Enum.TextXAlignment.Left
+
+BUTTON2.Name = "BUTTON2"
+BUTTON2.Parent = SIDELEF
+BUTTON2.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+BUTTON2.BorderColor3 = Color3.fromRGB(155, 0, 232)
+BUTTON2.BorderSizePixel = 2
+BUTTON2.Position = UDim2.new(0.0440528616, 0, 0.248275846, 0)
+BUTTON2.Size = UDim2.new(0, 30, 0, 30)
+BUTTON2.ZIndex = 1200
+BUTTON2.Font = Enum.Font.SourceSans
+BUTTON2.Text = ""
+BUTTON2.TextColor3 = Color3.fromRGB(255, 255, 255)
+BUTTON2.TextSize = 14.000
+
+TTITL2.Name = "TTITL2"
+TTITL2.Parent = BUTTON2
+TTITL2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TTITL2.BackgroundTransparency = 1.000
+TTITL2.BorderSizePixel = 0
+TTITL2.Position = UDim2.new(1.20644403, 0, -0.0482028499, 0)
+TTITL2.Size = UDim2.new(0, 158, 0, 32)
+TTITL2.ZIndex = 998
+TTITL2.Font = Enum.Font.GothamSemibold
+TTITL2.Text = "Toggle2"
+TTITL2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TTITL2.TextSize = 18.000
+TTITL2.TextXAlignment = Enum.TextXAlignment.Left
+
+Label.Name = "Label"
+Label.Parent = SIDELEF
+Label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label.BackgroundTransparency = 1.000
+Label.BorderSizePixel = 0
+Label.Position = UDim2.new(0.0714286119, 0, 0.413793117, 0)
+Label.Size = UDim2.new(0, 194, 0, 24)
+Label.ZIndex = 999
+Label.Font = Enum.Font.GothamSemibold
+Label.Text = "TEXT LABEL"
+Label.TextColor3 = Color3.fromRGB(255, 255, 255)
+Label.TextSize = 20.000
+
+PRESS.Name = "PRESS"
+PRESS.Parent = SIDELEF
+PRESS.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+PRESS.BorderColor3 = Color3.fromRGB(155, 0, 232)
+PRESS.BorderSizePixel = 2
+PRESS.Position = UDim2.new(0.0704845786, 0, 0.72758621, 0)
+PRESS.Size = UDim2.new(0, 195, 0, 30)
+PRESS.ZIndex = 1200
+PRESS.Font = Enum.Font.GothamSemibold
+PRESS.Text = "Button 1"
+PRESS.TextColor3 = Color3.fromRGB(255, 255, 255)
+PRESS.TextSize = 20.000
+
+PRESS2.Name = "PRESS2"
+PRESS2.Parent = SIDELEF
+PRESS2.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+PRESS2.BorderColor3 = Color3.fromRGB(155, 0, 232)
+PRESS2.BorderSizePixel = 2
+PRESS2.Position = UDim2.new(0.0704845786, 0, 0.872413814, 0)
+PRESS2.Size = UDim2.new(0, 195, 0, 30)
+PRESS2.ZIndex = 1200
+PRESS2.Font = Enum.Font.GothamSemibold
+PRESS2.Text = "Button 2"
+PRESS2.TextColor3 = Color3.fromRGB(255, 255, 255)
+PRESS2.TextSize = 20.000
+
+SIDERIG.Name = "SIDERIG"
+SIDERIG.Parent = PageON
+SIDERIG.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+SIDERIG.BorderSizePixel = 0
+SIDERIG.Position = UDim2.new(0.513249457, 0, 0.0254298002, 0)
+SIDERIG.Size = UDim2.new(0, 227, 0, 290)
+SIDERIG.ZIndex = 6
+
+ULTLINE.Name = "ULTLINE"
+ULTLINE.Parent = ENDSS
+ULTLINE.BackgroundColor3 = Color3.fromRGB(155, 0, 232)
+ULTLINE.BorderSizePixel = 0
+ULTLINE.Position = UDim2.new(0.0218253974, 0, 0.965035975, 0)
+ULTLINE.Size = UDim2.new(0, 481, 0, 2)
+ULTLINE.ZIndex = 999
+
+page2.Name = "page2"
+page2.Parent = ENDSS
+page2.Active = true
+page2.BackgroundColor3 = Color3.fromRGB(155, 0, 232)
+page2.BackgroundTransparency = 1.000
+page2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+page2.BorderSizePixel = 0
+page2.Position = UDim2.new(-0.0019841271, 0, 0.136597931, 0)
+page2.Size = UDim2.new(0, 504, 0, 319)
+page2.Visible = false
+page2.ZIndex = 7
+page2.ScrollBarThickness = 5
+
+SIDELEF_2.Name = "SIDELEF"
+SIDELEF_2.Parent = page2
+SIDELEF_2.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+SIDELEF_2.BorderSizePixel = 0
+SIDELEF_2.Position = UDim2.new(0.0390431248, 0, 0.0254298002, 0)
+SIDELEF_2.Size = UDim2.new(0, 227, 0, 290)
+SIDELEF_2.ZIndex = 6
+
+SIDERIG_2.Name = "SIDERIG"
+SIDERIG_2.Parent = page2
+SIDERIG_2.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+SIDERIG_2.BorderSizePixel = 0
+SIDERIG_2.Position = UDim2.new(0.513249457, 0, 0.0254298002, 0)
+SIDERIG_2.Size = UDim2.new(0, 227, 0, 290)
+SIDERIG_2.ZIndex = 6
+
+page3.Name = "page3"
+page3.Parent = ENDSS
+page3.Active = true
+page3.BackgroundColor3 = Color3.fromRGB(155, 0, 232)
+page3.BackgroundTransparency = 1.000
+page3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+page3.BorderSizePixel = 0
+page3.Position = UDim2.new(-0.0019841271, 0, 0.136597931, 0)
+page3.Size = UDim2.new(0, 504, 0, 319)
+page3.Visible = false
+page3.ZIndex = 7
+page3.ScrollBarThickness = 5
+
+SIDELEF_3.Name = "SIDELEF"
+SIDELEF_3.Parent = page3
+SIDELEF_3.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+SIDELEF_3.BorderSizePixel = 0
+SIDELEF_3.Position = UDim2.new(0.0390431248, 0, 0.0254298002, 0)
+SIDELEF_3.Size = UDim2.new(0, 227, 0, 290)
+SIDELEF_3.ZIndex = 6
+
+SIDERIG_3.Name = "SIDERIG"
+SIDERIG_3.Parent = page3
+SIDERIG_3.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+SIDERIG_3.BorderSizePixel = 0
+SIDERIG_3.Position = UDim2.new(0.513249457, 0, 0.0254298002, 0)
+SIDERIG_3.Size = UDim2.new(0, 227, 0, 290)
+SIDERIG_3.ZIndex = 6
+
+page4.Name = "page4"
+page4.Parent = ENDSS
+page4.Active = true
+page4.BackgroundColor3 = Color3.fromRGB(155, 0, 232)
+page4.BackgroundTransparency = 1.000
+page4.BorderColor3 = Color3.fromRGB(27, 42, 53)
+page4.BorderSizePixel = 0
+page4.Position = UDim2.new(-0.0019841271, 0, 0.136597931, 0)
+page4.Size = UDim2.new(0, 504, 0, 319)
+page4.Visible = false
+page4.ZIndex = 7
+page4.ScrollBarThickness = 5
+
+SIDELEF_4.Name = "SIDELEF"
+SIDELEF_4.Parent = page4
+SIDELEF_4.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+SIDELEF_4.BorderSizePixel = 0
+SIDELEF_4.Position = UDim2.new(0.0390431248, 0, 0.0254298002, 0)
+SIDELEF_4.Size = UDim2.new(0, 227, 0, 290)
+SIDELEF_4.ZIndex = 6
+
+SIDERIG_4.Name = "SIDERIG"
+SIDERIG_4.Parent = page4
+SIDERIG_4.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+SIDERIG_4.BorderSizePixel = 0
+SIDERIG_4.Position = UDim2.new(0.513249457, 0, 0.0254298002, 0)
+SIDERIG_4.Size = UDim2.new(0, 227, 0, 290)
+SIDERIG_4.ZIndex = 6
+
+Loader.Name = "Loader"
+Loader.Parent = MAX
+Loader.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Loader.BackgroundTransparency = 1.000
+Loader.BorderColor3 = Color3.fromRGB(155, 0, 232)
+Loader.BorderSizePixel = 2
+Loader.ClipsDescendants = true
+Loader.Position = UDim2.new(0.00789888576, 0, 0.179775283, 0)
+Loader.Size = UDim2.new(0, 311, 0, 355)
+Loader.Visible = false
+
+Load.Name = "Load"
+Load.Parent = Loader
+Load.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Load.BackgroundTransparency = 1.000
+Load.BorderSizePixel = 0
+Load.Position = UDim2.new(0.722600281, 0, 0.718309879, 0)
+Load.Size = UDim2.new(0, 100, 0, 100)
+Load.Image = "http://www.roblox.com/asset/?id=6230537099"
+Load.ImageTransparency = 1.000
+
+Start.Name = "Start"
+Start.Parent = Loader
+Start.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Start.BackgroundTransparency = 1.000
+Start.BorderSizePixel = 0
+Start.Position = UDim2.new(0.176848873, 0, 0.518309891, 0)
+Start.Size = UDim2.new(0, 200, 0, 50)
+Start.Visible = false
+Start.Font = Enum.Font.GothamSemibold
+Start.Text = "Run"
+Start.TextColor3 = Color3.fromRGB(255, 255, 255)
+Start.TextScaled = true
+Start.TextSize = 14.000
+Start.TextTransparency = 1.000
+Start.TextWrapped = true
+
+UICorner_3.CornerRadius = UDim.new(0, 5)
+UICorner_3.Parent = Start
+
+Welcome.Name = "Welcome"
+Welcome.Parent = Loader
+Welcome.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Welcome.BackgroundTransparency = 1.000
+Welcome.BorderSizePixel = 0
+Welcome.Position = UDim2.new(0.176848873, 0, 0.115492955, 0)
+Welcome.Size = UDim2.new(0, 200, 0, 50)
+Welcome.Font = Enum.Font.GothamSemibold
+Welcome.Text = "Welcome to Sychorn"
+Welcome.TextColor3 = Color3.fromRGB(255, 255, 255)
+Welcome.TextScaled = true
+Welcome.TextSize = 14.000
+Welcome.TextTransparency = 1.000
+Welcome.TextWrapped = true
+
+lt.Name = "lt"
+lt.Parent = Loader
+lt.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+lt.BackgroundTransparency = 1.000
+lt.BorderSizePixel = 0
+lt.Position = UDim2.new(0.0771704167, 0, 0.788732409, 0)
+lt.Size = UDim2.new(0, 200, 0, 50)
+lt.Font = Enum.Font.GothamSemibold
+lt.Text = "N/A"
+lt.TextColor3 = Color3.fromRGB(255, 255, 255)
+lt.TextScaled = true
+lt.TextSize = 14.000
+lt.TextTransparency = 1.000
+lt.TextWrapped = true
+
+Close.Name = "Close"
+Close.Parent = Loader
+Close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Close.BackgroundTransparency = 1.000
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.919614136, 0, 0.0253521129, 0)
+Close.Size = UDim2.new(0, 16, 0, 17)
+Close.Visible = false
+Close.Font = Enum.Font.SourceSans
+Close.Text = ""
+Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close.TextSize = 14.000
+
+UICorner_4.Parent = Close
+
+UICorner_5.CornerRadius = UDim.new(0, 5)
+UICorner_5.Parent = Loader
+
+Nofication.Name = "Nofication"
+Nofication.Parent = MAX
+Nofication.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Nofication.BorderSizePixel = 0
+Nofication.ClipsDescendants = true
+Nofication.Position = UDim2.new(0.00789888203, 0, 0.868378818, 0)
+Nofication.Size = UDim2.new(0, 0, 0, 57)
+Nofication.ZIndex = 2
+
+mark.Name = "mark"
+mark.Parent = Nofication
+mark.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+mark.BackgroundTransparency = 1.000
+mark.BorderSizePixel = 0
+mark.Position = UDim2.new(0.805309653, 0, 0.210526317, 0)
+mark.Size = UDim2.new(0, 35, 0, 32)
+mark.ZIndex = 3
+mark.Image = "rbxassetid://6236317395"
+
+NTT.Name = "NTT"
+NTT.Parent = Nofication
+NTT.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NTT.BackgroundTransparency = 1.000
+NTT.BorderSizePixel = 0
+NTT.Size = UDim2.new(0, 102, 0, 20)
+NTT.ZIndex = 3
+NTT.Font = Enum.Font.GothamSemibold
+NTT.Text = "Notfication"
+NTT.TextColor3 = Color3.fromRGB(255, 255, 255)
+NTT.TextSize = 14.000
+
+ABOUT.Name = "ABOUT"
+ABOUT.Parent = Nofication
+ABOUT.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ABOUT.BackgroundTransparency = 1.000
+ABOUT.BorderSizePixel = 0
+ABOUT.Position = UDim2.new(0.0398230106, 0, 0.350877196, 0)
+ABOUT.Size = UDim2.new(0, 165, 0, 30)
+ABOUT.ZIndex = 3
+ABOUT.Font = Enum.Font.GothamSemibold
+ABOUT.Text = "Run Sychorn Hub "
+ABOUT.TextColor3 = Color3.fromRGB(255, 255, 255)
+ABOUT.TextScaled = true
+ABOUT.TextSize = 14.000
+ABOUT.TextWrapped = true
+
+UICorner_6.CornerRadius = UDim.new(0, 5)
+UICorner_6.Parent = Nofication
+
+ColorDelay.Name = "ColorDelay"
+ColorDelay.Parent = MAX
+ColorDelay.BackgroundColor3 = Color3.fromRGB(155, 0, 232)
+ColorDelay.BorderSizePixel = 0
+ColorDelay.ClipsDescendants = true
+ColorDelay.Position = UDim2.new(0.00789889693, 0, 0.868378818, 0)
+ColorDelay.Size = UDim2.new(0, 0, 0, 57)
+
+UICorner_7.CornerRadius = UDim.new(0, 5)
+UICorner_7.Parent = ColorDelay
+
+-- Scripts:
+
+local function HWTT_fake_script() -- Page1.LocalScript 
+	local script = Instance.new('LocalScript', Page1)
+
+	function Check() 
+		if script.Parent.Parent.Line_2.Size == UDim2.new(0, 75, 0, 2) then
+			game:GetService("TweenService"):Create(script.Parent.Parent.Line_2, TweenInfo.new(0.21, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {Size = UDim2.new(0, 0,0, 2)}):Play()
+			elseif script.Parent.Parent.Line_3.Size == UDim2.new(0, 75, 0, 2) then
+			game:GetService("TweenService"):Create(script.Parent.Parent.Line_3, TweenInfo.new(0.21, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {Size = UDim2.new(0, 0,0, 2)}):Play()
+			elseif script.Parent.Parent.Line_4.Size == UDim2.new(0, 75, 0, 2) then
+			game:GetService("TweenService"):Create(script.Parent.Parent.Line_4, TweenInfo.new(0.21, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {Size = UDim2.new(0, 0,0, 2)}):Play()
+		end
+	end
+	
+		
+	script.Parent.MouseButton1Down:Connect(function()
+		--Check()
+		script.Parent.Parent.Parent.Parent.PageON.Visible = true
+		script.Parent.Parent.Parent.Parent.page2.Visible = false
+		script.Parent.Parent.Parent.Parent.page3.Visible = false
+		script.Parent.Parent.Parent.Parent.page4.Visible = false
+		game:GetService("TweenService"):Create(script.Parent.Parent.Line_1, TweenInfo.new(0.21, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {Position = UDim2.new(0, 0,0.849, 0)}):Play()
+	end)
+	
+	--[[_G.ON = false
+	script.Parent.MouseButton1Down:Connect(function()
+		if _G.ON == false then
+		_G.ON = true 
+		game:GetService("TweenService"):Create(script.Parent.Parent.Line_1, TweenInfo.new(0.21, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {Size = UDim2.new(0, 75,0, 2)}):Play()
+		else
+		_G.ON = false
+		game:GetService("TweenService"):Create(script.Parent.Parent.Line_1, TweenInfo.new(0.21, Enum.EasingStyle.Sine, Enum.EasingDirection.Out), {Size = UDim2.new(0, 0,0, 2)}):Play()
+		end]]--
+end
+coroutine.wrap(HWTT_fake_script)()
+local function IVZTN_fake_script() -- Page2.LocalScript 
+	local script = Instance.new('LocalScript', Page2)
+
+	function Check() 
+		if script.Parent.Parent.Line_1.Size == UDim2.new(0, 75, 0, 2) then
+			game:GetService("TweenService"):Create(script.Parent.Parent.Line_1, TweenInfo.new(0.21, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {Size = UDim2.new(0, 0,0, 2)}):Play()
+			elseif script.Parent.Parent.Line_3.Size == UDim2.new(0, 75, 0, 2) then
+			game:GetService("TweenService"):Create(script.Parent.Parent.Line_3, TweenInfo.new(0.21, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {Size = UDim2.new(0, 0,0, 2)}):Play()
+			elseif script.Parent.Parent.Line_4.Size == UDim2.new(0, 75, 0, 2) then
+			game:GetService("TweenService"):Create(script.Parent.Parent.Line_4, TweenInfo.new(0.21, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {Size = UDim2.new(0, 0,0, 2)}):Play()
+		end
+	end
+	
+		
+	script.Parent.MouseButton1Down:Connect(function()
+		--Check()
+		script.Parent.Parent.Parent.Parent.PageON.Visible = false
+		script.Parent.Parent.Parent.Parent.page2.Visible = true
+		script.Parent.Parent.Parent.Parent.page3.Visible = false
+		script.Parent.Parent.Parent.Parent.page4.Visible = false
+		game:GetService("TweenService"):Create(script.Parent.Parent.Line_1, TweenInfo.new(0.21, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {Position = UDim2.new(0.251, 0,0.849, 0)}):Play()
+	end)
+	
+	--[[_G.ON = false
+	script.Parent.MouseButton1Down:Connect(function()
+		if _G.ON == false then
+		_G.ON = true 
+		game:GetService("TweenService"):Create(script.Parent.Parent.Line_1, TweenInfo.new(0.21, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {Size = UDim2.new(0, 75,0, 2)}):Play()
+		else
+		_G.ON = false
+		game:GetService("TweenService"):Create(script.Parent.Parent.Line_1, TweenInfo.new(0.21, Enum.EasingStyle.Sine, Enum.EasingDirection.Out), {Size = UDim2.new(0, 0,0, 2)}):Play()
+		end]]--
+end
+coroutine.wrap(IVZTN_fake_script)()
+local function XPKWQZ_fake_script() -- Page3.LocalScript 
+	local script = Instance.new('LocalScript', Page3)
+
+	function Check() 
+		if script.Parent.Parent.Line_2.Size == UDim2.new(0, 75, 0, 2) then
+			game:GetService("TweenService"):Create(script.Parent.Parent.Line_2, TweenInfo.new(0.21, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {Size = UDim2.new(0, 0,0, 2)}):Play()
+			elseif script.Parent.Parent.Line_1.Size == UDim2.new(0, 75, 0, 2) then
+			game:GetService("TweenService"):Create(script.Parent.Parent.Line_1, TweenInfo.new(0.21, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {Size = UDim2.new(0, 0,0, 2)}):Play()
+			elseif script.Parent.Parent.Line_4.Size == UDim2.new(0, 75, 0, 2) then
+			game:GetService("TweenService"):Create(script.Parent.Parent.Line_4, TweenInfo.new(0.21, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {Size = UDim2.new(0, 0,0, 2)}):Play()
+		end
+	end
+	
+		
+	script.Parent.MouseButton1Down:Connect(function()
+		--Check()
+		script.Parent.Parent.Parent.Parent.PageON.Visible = false
+		script.Parent.Parent.Parent.Parent.page2.Visible = false
+		script.Parent.Parent.Parent.Parent.page3.Visible = true
+		script.Parent.Parent.Parent.Parent.page4.Visible = false
+		game:GetService("TweenService"):Create(script.Parent.Parent.Line_1, TweenInfo.new(0.21, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {Position = UDim2.new(0.505, 0,0.849, 0)}):Play()
+	end)
+	
+	--[[_G.ON = false
+	script.Parent.MouseButton1Down:Connect(function()
+		if _G.ON == false then
+		_G.ON = true 
+		game:GetService("TweenService"):Create(script.Parent.Parent.Line_1, TweenInfo.new(0.21, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {Size = UDim2.new(0, 75,0, 2)}):Play()
+		else
+		_G.ON = false
+		game:GetService("TweenService"):Create(script.Parent.Parent.Line_1, TweenInfo.new(0.21, Enum.EasingStyle.Sine, Enum.EasingDirection.Out), {Size = UDim2.new(0, 0,0, 2)}):Play()
+		end]]--
+end
+coroutine.wrap(XPKWQZ_fake_script)()
+local function CUZFKMR_fake_script() -- Page4.LocalScript 
+	local script = Instance.new('LocalScript', Page4)
+
+	function Check() 
+		if script.Parent.Parent.Line_2.Size == UDim2.new(0, 75, 0, 2) then
+			game:GetService("TweenService"):Create(script.Parent.Parent.Line_2, TweenInfo.new(0.21, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {Size = UDim2.new(0, 0,0, 2)}):Play()
+			elseif script.Parent.Parent.Line_3.Size == UDim2.new(0, 75, 0, 2) then
+			game:GetService("TweenService"):Create(script.Parent.Parent.Line_3, TweenInfo.new(0.21, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {Size = UDim2.new(0, 0,0, 2)}):Play()
+			elseif script.Parent.Parent.Line_1.Size == UDim2.new(0, 75, 0, 2) then
+			game:GetService("TweenService"):Create(script.Parent.Parent.Line_1, TweenInfo.new(0.21, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {Size = UDim2.new(0, 0,0, 2)}):Play()
+		end
+	end
+	
+		
+	script.Parent.MouseButton1Down:Connect(function()
+		--Check()
+		script.Parent.Parent.Parent.Parent.PageON.Visible = false
+		script.Parent.Parent.Parent.Parent.page2.Visible = false
+		script.Parent.Parent.Parent.Parent.page3.Visible = false
+		script.Parent.Parent.Parent.Parent.page4.Visible = true
+		game:GetService("TweenService"):Create(script.Parent.Parent.Line_1, TweenInfo.new(0.21, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {Position = UDim2.new(0.768, 0,0.849, 0)}):Play()
+	end)
+	
+	--[[_G.ON = false
+	script.Parent.MouseButton1Down:Connect(function()
+		if _G.ON == false then
+		_G.ON = true 
+		game:GetService("TweenService"):Create(script.Parent.Parent.Line_1, TweenInfo.new(0.21, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {Size = UDim2.new(0, 75,0, 2)}):Play()
+		else
+		_G.ON = false
+		game:GetService("TweenService"):Create(script.Parent.Parent.Line_1, TweenInfo.new(0.21, Enum.EasingStyle.Sine, Enum.EasingDirection.Out), {Size = UDim2.new(0, 0,0, 2)}):Play()
+		end]]--
+end
+coroutine.wrap(CUZFKMR_fake_script)()
+local function MKOWSA_fake_script() -- Fill.LocalScript 
+	local script = Instance.new('LocalScript', Fill)
+
+	local UserInputService = game:GetService("UserInputService")
+	local Dragging = false
+	script.Parent.TextButton.MouseButton1Down:Connect(function()
+		Dragging = true
+	end)
+	
+	UserInputService.InputChanged:Connect(function()
+		if Dragging then
+			local MousePos = UserInputService:GetMouseLocation()+Vector2.new(0,36)
+			local RelPos = MousePos-script.Parent.AbsolutePosition
+			local Precent = math.clamp(RelPos.X/script.Parent.AbsoluteSize.X,0,1)
+			script.Parent.TextButton.Position = UDim2.new(Precent,0,0.5,0)
+			--game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Precent*100
+		end
+	end)
+	
+	UserInputService.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			Dragging = false
+		end
+	end)
+end
+coroutine.wrap(MKOWSA_fake_script)()
+local function GYHUSE_fake_script() -- BUTTON.LocalScript 
+	local script = Instance.new('LocalScript', BUTTON)
+
+	_G.Wh = false
+	script.Parent.MouseButton1Down:Connect(function()
+		if _G.Wh == false then
+			_G.Wh = true
+			game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.21, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {BackgroundColor3 = Color3.fromRGB(0, 255, 0)}):Play()
+		else
+			_G.Wh = false
+			game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.21, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {BackgroundColor3 = Color3.fromRGB(34, 34, 34)}):Play()
+		end
+	end)
+	
+end
+coroutine.wrap(GYHUSE_fake_script)()
+local function IIVO_fake_script() -- BUTTON2.LocalScript 
+	local script = Instance.new('LocalScript', BUTTON2)
+
+	_G.TURN2 = false
+	script.Parent.MouseButton1Down:Connect(function()
+		if _G.TURN2 == false then
+			_G.TURN2 = true
+			game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.21, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {BackgroundColor3 = Color3.fromRGB(0, 255, 0)}):Play()
+		else
+			_G.TURN2 = false
+			game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.21, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {BackgroundColor3 = Color3.fromRGB(34, 34, 34)}):Play()
+		end
+	end)
+	
+end
+coroutine.wrap(IIVO_fake_script)()
+local function JGEMH_fake_script() -- ENDSS.Dragify 
+	local script = Instance.new('LocalScript', ENDSS)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+	    dragToggle = nil
+	    local dragSpeed = 0.50
+	    dragInput = nil
+	    dragStart = nil
+	    local dragPos = nil
+	    function updateInput(input)
+	        local Delta = input.Position - dragStart
+	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.30), {Position = Position}):Play()
+	    end
+	    Frame.InputBegan:Connect(function(input)
+	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+	            dragToggle = true
+	            dragStart = input.Position
+	            startPos = Frame.Position
+	            input.Changed:Connect(function()
+	                if input.UserInputState == Enum.UserInputState.End then
+	                    dragToggle = false
+	                end
+	            end)
+	        end
+	    end)
+	    Frame.InputChanged:Connect(function(input)
+	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	            dragInput = input
+	        end
+	    end)
+	    game:GetService("UserInputService").InputChanged:Connect(function(input)
+	        if input == dragInput and dragToggle then
+	            updateInput(input)
+	        end
+	    end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(JGEMH_fake_script)()
+local function YSYS_fake_script() -- Load.LocalScript 
+	local script = Instance.new('LocalScript', Load)
+
+	local RunService = game:GetService("RunService")
+	
+	local guiObject = script.Parent
+	
+	local degreesPerSecond = 180
+	
+	local function onRenderStep(deltaTime)
+		local deltaRotation = deltaTime * degreesPerSecond
+		guiObject.Rotation = guiObject.Rotation + deltaRotation 
+	end
+	RunService.RenderStepped:Connect(onRenderStep)
+	
+	wait(14)
+	game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {ImageTransparency = 1}):Play()
+end
+coroutine.wrap(YSYS_fake_script)()
+local function OSMJU_fake_script() -- Start.LocalScript 
+	local script = Instance.new('LocalScript', Start)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Close.LocalScript.Disabled = true
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {BackgroundTransparency = 1}):Play()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {TextTransparency = 1}):Play()
+		wait(0.45)
+		game:GetService("TweenService"):Create(script.Parent.Parent.Welcome, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {TextTransparency = 1}):Play()
+		wait(0.45)
+		game:GetService("TweenService"):Create(script.Parent.Parent.Close, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {BackgroundTransparency = 1}):Play()
+		wait(0.45)
+		game:GetService("TweenService"):Create(script.Parent.Parent.Parent.Loader, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {BackgroundTransparency = 1}):Play()
+	end)
+	
+	function DHSYE()
+		game:GetService("TweenService"):Create(script.Parent.Parent.Parent.ColorDelay, TweenInfo.new(0.1, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {Size = UDim2.new(0, 226,0, 57)}):Play()
+		wait(0.35)
+		game:GetService("TweenService"):Create(script.Parent.Parent.Parent.Nofication, TweenInfo.new(0.1, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {Size = UDim2.new(0, 226,0, 57)}):Play()
+	end
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		DHSYE()
+	end)
+end
+coroutine.wrap(OSMJU_fake_script)()
+local function AROJPFA_fake_script() -- lt.LocalScript 
+	local script = Instance.new('LocalScript', lt)
+
+	wait()
+	script.Parent.Parent.Parent.Loader.Visible = true
+	wait(6)
+	script.Parent.Parent.Close.Visible = true
+	game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {TextTransparency = 0}):Play()
+	game:GetService("TweenService"):Create(script.Parent.Parent.Load, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {ImageTransparency = 0}):Play()
+	game:GetService("TweenService"):Create(script.Parent.Parent.Close, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {BackgroundTransparency = 0}):Play()
+	game:GetService("TweenService"):Create(script.Parent.Parent.Welcome, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {TextTransparency = 0}):Play()
+	script.Parent.Text = "Loading assest"
+	wait(1)
+	script.Parent.Text = "Loading assest."
+	wait(1)
+	script.Parent.Text = "Loading assest.."
+	wait(1)
+	script.Parent.Text = "Loading assest..."
+	wait(1)
+	script.Parent.Text = "Loading assest"
+	wait(1)
+	script.Parent.Text = "Loading assest."
+	wait(1)
+	script.Parent.Text = "Loading assest.."
+	wait(1)
+	script.Parent.Text = "Loading assest..."
+	wait(1)
+	script.Parent.Text = "Loading success"
+	script.Parent.Parent.Start.Visible = true
+	wait(1)
+	game:GetService("TweenService"):Create(script.Parent.Parent.Start, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {BackgroundTransparency = 0}):Play()
+	game:GetService("TweenService"):Create(script.Parent.Parent.Start, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {TextTransparency = 0}):Play()
+	game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {TextTransparency = 1}):Play()
+	
+end
+coroutine.wrap(AROJPFA_fake_script)()
+local function DWUA_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Loader.Visible = false
+	end)
+end
+coroutine.wrap(DWUA_fake_script)()
+local function EYJGTBK_fake_script() -- Loader.LocalScript 
+	local script = Instance.new('LocalScript', Loader)
+
+	wait(5)
+	game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {BackgroundTransparency = 0}):Play()
+	
+end
+coroutine.wrap(EYJGTBK_fake_script)()
+local function XAQPP_fake_script() -- mark.LocalScript 
+	local script = Instance.new('LocalScript', mark)
+
+	print("Sychorn On TOP!")
+	script.Parent.MouseButton1Click:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent.Parent.Parent.Nofication, TweenInfo.new(0.1, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {Size = UDim2.new(0, 0,0, 57)}):Play()
+		wait(0.2)
+		script.Parent.Parent.Parent.ENDSS.Visible = true
+		ColorDelay.Visible = true
+		game:GetService("TweenService"):Create(script.Parent.Parent.Parent.ColorDelay, TweenInfo.new(0.1, Enum.EasingStyle.Sine, Enum.EasingDirection.In), {Size = UDim2.new(0, 0,0, 57)}):Play()
+		wait(0.45)
+		script.Parent.Parent.Parent.Nofication.Visible = false
+		local function POKER()
+			local script = Instance.new('LocalScript', ENDSS)
+			local UserInputService = game:GetService("UserInputService")
+			_G.OPEN = true
+
+			UserInputService.InputBegan:Connect(function(KeyCode)
+				if KeyCode.KeyCode == Enum.KeyCode.RightControl then
+					if 	_G.OPEN == true then
+						_G.OPEN = false
+						script.Parent.Visible = false
+					else 
+						script.Parent.Visible = true
+						_G.OPEN = true
+					end
+				end
+			end)
+
+
+		end
+		coroutine.wrap(POKER)()
+
+	end)
+end
+coroutine.wrap(XAQPP_fake_script)()
+
+
